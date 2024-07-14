@@ -9,7 +9,7 @@ import ShopLayout from "./layouts/ShopLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/help/Faq";
-import Contact from "./pages/Contact";
+import Contact from "./pages/help/Contact";
 import ShopList, { shopsLoader } from "./pages/shops/ShopList";
 
 function App() {

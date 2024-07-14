@@ -7,8 +7,10 @@ export default function HelpLayout(){
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nam.</p>
 
-            <NavLink to='faq'>Faq</NavLink>
-            <NavLink to='contact'>Contact</NavLink>
+            <nav>
+                <NavLink to='faq'>Faq</NavLink>
+                <NavLink to='contact'>Contact</NavLink>
+            </nav>
 
             <Outlet />
         </div>

@@ -2,3 +2,86 @@ body{
   background-color: #2b3452;
   color: white;
 }
+*{
+  color: white;
+}
+.home-page{
+  text-align: center;
+  margin-top: 100px;
+}
+.home-page h1{
+  margin-right: 200px;
+}
+header h1{
+  margin-left: 200px;
+}
+.root{
+  transform: translate(70%, -230%);
+}
+.root a{
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+  font-size: 1.1em;
+  padding: 10px;
+}
+.root a.active{
+  border: 2px solid red;
+  background-color: red;
+  border-radius: 5px;
+} 
+.about{
+  text-align: center;
+  margin-top: 100px;
+}
+.about h1{
+  margin-right: 200px;
+}
+.help-layout{
+  margin-left: 0px;
+}
+.help-layout p{
+  margin-left: 30px;
+}
+.help-layout nav a{
+  margin: 50px;
+  text-decoration: none;
+  font-size: 1.1em;
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 2px;
+}
+.help-layout nav{
+  margin-top: 50px;
+  transform: translate(20%, 0%);
+}
+.faq{
+  margin-top: 60px;
+}
+.faq h1{
+  margin-left: 500px;
+  margin-bottom: 80px;
+}
+.faq .qns{
+  margin: 20px;
+}
+.faq .qns div{
+  padding: 20px;
+  border: 2px solid grey;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px grey;
+}
+.contact{
+  margin-top: 100px;
+  margin-left: 350px;
+  width: fit-content;
+  border: 2px solid crimson;
+  padding: 20px;
+}
+.contact h2{
+  margin-bottom: 50px;
+}
+.contact form input{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}

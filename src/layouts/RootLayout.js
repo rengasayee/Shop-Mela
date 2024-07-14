@@ -5,7 +5,7 @@ export default function RootLayout(){
         <header>
             <h1>Shop-Mela</h1>
 
-            <nav>
+            <nav className="root">
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='about'>About</NavLink>
                 <NavLink to='help'>Help</NavLink>
