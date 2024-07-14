@@ -1,0 +1,44 @@
+Unexpected Application Error!
+Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. Check the render method of `App`.
+Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `App`.
+    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:30334:21)
+    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:30355:19)
+    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:17949:27)
+    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:17999:39)
+    at reconcileChildren (http://localhost:3000/static/js/bundle.js:22429:32)
+    at updateContextProvider (http://localhost:3000/static/js/bundle.js:24138:7)
+    at beginWork (http://localhost:3000/static/js/bundle.js:24553:18)
+    at beginWork$1 (http://localhost:3000/static/js/bundle.js:29467:18)
+    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:28737:16)
+    at workLoopSync (http://localhost:3000/static/js/bundle.js:28660:9)
+
+
+Failed to compile.
+
+Attempted import error: 'RootLayout' is not exported from './layouts/RootLayout' (imported as 'RootLayout').      
+ERROR in ./src/App.js 15:34-44
+export 'RootLayout' (imported as 'RootLayout') was not found in './layouts/RootLayout' (possible exports: default)
+
+webpack compiled with 1 error
+
+Soln : In App.js, RootLayout was imported as import { RootLayout } from './layouts/RootLayout';
+When export default used, no curly brackets required.
+
+correct one : import RootLayout from './layouts/RootLayout';
+
+
+Uncaught runtime errors:
+×
+ERROR
+Absolute route path "/" nested under path "/shops" is not valid. An absolute child route path must start with the combined path of all its parent routes.
+
+Cannot read properties of undefined (reading 'map')
+TypeError: Cannot read properties of undefined (reading 'map')
+
+Unexpected Application Error!
+Unexpected token 'N', "Not Found" is not valid JSON
+SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON
+
+Why this happens ? Bcoz json-server is not installed or endpoint was not created.
