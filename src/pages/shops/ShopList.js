@@ -7,7 +7,7 @@ export default function ShopList(){
         <div className="shop-list">
             {
                 shops.map(shop => (
-                    <Link to='/' key={shop.id}>
+                    <Link to={shop.id.toString()} key={shop.id} className='shop-instance'>
                         <p>{shop.title}</p>
                         <p>{shop.location}</p>
                     </Link>

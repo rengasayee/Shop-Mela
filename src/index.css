@@ -85,3 +85,32 @@ header h1{
   margin-left: 20px;
   margin-bottom: 20px;
 }
+.home-page p{
+  padding: 20px;
+}
+.about p{
+  padding: 20px;
+}
+.shop-list a{
+  text-decoration: none;
+}
+.shop-instance {
+  border: 2px solid grey;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.error a{
+  font-size: 1.2em;
+  margin-left: 200px;
+}
+.shop-details{
+  text-align: center;
+  padding: 20px;
+  border: 2px solid salmon;
+}

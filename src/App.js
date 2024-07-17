@@ -11,6 +11,8 @@ import About from "./pages/About";
 import Faq from "./pages/help/Faq";
 import Contact from "./pages/help/Contact";
 import ShopList, { shopsLoader } from "./pages/shops/ShopList";
+import NotFound from './pages/NotFound';
+import ShopDetails, { shopDetailsLoader } from "./pages/shops/ShopDetails";
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
@@ -24,8 +26,15 @@ function App() {
       </Route>
 
       <Route path='shops' element={<ShopLayout />}>
-        <Route path='shoplist' element={<ShopList />} loader={shopsLoader}></Route>
+        <Route index element={<ShopList />} loader={shopsLoader}></Route>
+      
+        <Route path=':id'
+              element={<ShopDetails />}
+              loader = {shopDetailsLoader}
+        ></Route>
       </Route>
+
+      <Route path='*' element={<NotFound />}></Route>
     </Route>
   ))
   return (
