@@ -22,5 +22,9 @@ export default function ShopList(){
 export const shopsLoader = async () => {
     const res = await fetch('http://localhost:4000/shops');
 
+    if(!res.ok){
+        throw new Error("Could not fetch the shops list");
+    }
+
     return res.json();
 }

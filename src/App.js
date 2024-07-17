@@ -9,10 +9,11 @@ import ShopLayout from "./layouts/ShopLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/help/Faq";
-import Contact from "./pages/help/Contact";
+import Contact, { contactAction } from "./pages/help/Contact";
 import ShopList, { shopsLoader } from "./pages/shops/ShopList";
 import NotFound from './pages/NotFound';
 import ShopDetails, { shopDetailsLoader } from "./pages/shops/ShopDetails";
+import ShopsError from "./pages/shops/ShopsError";
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
@@ -22,11 +23,17 @@ function App() {
 
       <Route path='help' element={<HelpLayout />}>
         <Route path='faq' element={<Faq />}></Route>
-        <Route path='contact' element={<Contact />}></Route>
+        <Route path='contact' element={<Contact />} action={contactAction}></Route>
       </Route>
 
-      <Route path='shops' element={<ShopLayout />}>
-        <Route index element={<ShopList />} loader={shopsLoader}></Route>
+      <Route path='shops' element={<ShopLayout />} errorElement={<ShopsError />}>
+        <Route 
+        index 
+        element={<ShopList />} 
+        loader={shopsLoader}
+        
+        >
+        </Route>
       
         <Route path=':id'
               element={<ShopDetails />}

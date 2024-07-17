@@ -25,5 +25,9 @@ export const shopDetailsLoader = async ({ params }) => {
 
     const details = await fetch('http://localhost:4000/shops/' + id);
 
+    if(!details.ok){
+        throw new Error("The shop doesn't exist");
+    }
+
     return details.json();
 }
